@@ -1,0 +1,256 @@
+<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+					<title>The Valley Safari's – Packages & Booking</title>
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+		  body {
+		  font-family: 'Georgia', serif;
+		  margin: 0;
+		  padding: 0;
+		  background-color: #fdfcf9;
+		  color: #2f2f2f;}
+	  
+			header {
+		  background-color: #2f4f2f;
+		  color: white;
+		  padding: 40px 20px;
+		  text-align: center;
+		  position: relative;}
+
+		  .sa-flag {
+		  position: absolute;
+		  top: 20px;
+		  right: 20px;
+		  width: 50px;}
+
+		  .container {
+		  max-width: 1100px;
+		  margin: auto;
+		  padding: 30px 20px;}
+
+		  h1 {color: #8B4513;}
+		  h2, h3 {color: #2f4f2f;}
+
+		  .package {
+		  background-color: white;
+		  border: 1px solid #ccc;
+		  padding: 20px;
+		  margin-bottom: 30px;
+		  border-radius: 10px;
+		  box-shadow: 2px 4px 12px rgba(0,0,0,0.1);}
+
+		.package h3 {margin-top: 0;}
+		.package ul { padding-left: 20px;}
+		.package ul li {margin-bottom: 10px;}
+
+		  .book-button {
+		  display: inline-block;
+		  background-color: #3b6e3b;
+		  color: white;
+		  padding: 12px 25px;
+		  margin-top: 20px;
+		  border-radius: 6px;
+		  text-decoration: none;
+		  font-weight: bold;}
+
+		.book-button:hover {background-color: #2f4f2f;}
+
+		  .back-home {
+		  display: inline-block;
+		  margin: 40px auto 0;
+		  padding: 12px 20px;
+		  text-align: center;
+		  background-color: #bbb;
+		  color: white;
+		  border-radius: 5px;
+		  text-decoration: none;}
+
+		  .contact-section {
+		  margin-top: 60px;
+		  text-align: center;}
+
+		  .contact-section p {
+		  margin-bottom: 6px;}
+
+		  footer {
+		  background-color: #2f4f2f;
+		  color: white;
+		  text-align: center;
+		  padding: 30px 20px;
+		  margin-top: 60px;}
+
+		@media(max-width: 768px) {.package {padding: 15px;}}
+		
+</style>
+	</head>
+	
+	<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;}
+
+    /* Posisionering van die hamburger ikoon */
+    .menu-toggle {
+    font-size: 30px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;}
+
+    /* Die menu self */
+    .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 30px 0;
+    text-align: center;
+    z-index: 999;}
+
+    .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 20px;
+    display: block;}
+
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);}
+</style>
+
+<!--  Hamburger ikoon -->
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<!-- ✅Spyskaart wat oopmaak wanneer jy klik -->
+<div class="menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="packages.html">Packages & Bookings</a>
+  <a href="logbook.html">Hunters Logbook</a>
+  <a href="team.html">Meet the Team</a>
+  <a href="faqs.html">FAQs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";}
+</script>
+		<body>
+		
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f4f4f4; flex-wrap: wrap; text-align: center;">
+  <!-- Safari logo aan die linkerkant -->
+  <div style="flex: 1;">
+		<img src="kudu_logo2.jpg" alt="The Valley Safaris Logo" style="max-width: 120px; height: auto; display: block; margin: 0 auto;">
+		
+  </div>
+
+<!-- Middel gedeelte met hoof opskrif en vlag -->
+  <div style="flex: 1;">
+		<img class="sa-flag" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="South African Flag" style="width: 50px; margin-top: 10px;">
+    <p style="margin-top: 20px; font-style: italic;">
+	<h1>Safari & Lodge Packages</h1>
+  <h2><p>Choose your ideal South African experience</p><h2>
+  </div>
+
+<!-- Lodge logo aan die regterkant -->
+  <div style="flex: 1;">
+		<img src="lodge_logo2.jpg" alt="The Valley Lodge Logo" style="max-width: 120px; height: auto; display: block; margin: 0 auto;">
+		
+  </div>
+  
+</header>
+<hr style="border: 4px groove #367C2B; margin: 0;">	
+
+<div class="container">
+
+<h2>Guided Adventure Packages</h2>
+
+<div class="package">
+
+    <h3>1. Classic Bushveld Safari (3 Days / 2 Nights)</h3>
+    <ul>
+      <li>2 nights luxury tented camp accommodation</li>
+      <li>All meals & soft drinks included</li>
+      <li>2 morning & 2 sunset game drives</li>
+      <li>Professional hunting guide</li>
+      <li>Campfire storytelling & stargazing</li>
+    </ul>
+    <p><strong>From $1,250 per person</strong></p>
+    <a class="book-button" href="mailto:strydomtihard@icloud.com?subject=Booking Enquiry – Classic Safari">Book Now</a>
+	
+  </div>
+  
+  <div class="package">
+    <h3>2. Premium Safari Experience (5 Days / 4 Nights)</h3>
+    <ul>
+		  <li>4 nights private luxury suite at The Valley Lodge</li>
+		  <li>Fine dining & full bar included</li>
+		  <li>Daily game drives & optional walking safaris</li>
+		  <li>Birdwatching, photography & cultural experiences</li>
+		  <li>Return transfers from Potchefstroom or OR Tambo Intl.</li>
+    </ul>
+    <p><strong>From $2,950 per person</strong></p>
+    <a class="book-button" href="mailto:strydomtihard@icloud.com?subject=Booking Enquiry – Premium Safari">Book Now</a>
+	
+  </div>
+  
+  <h2>Tranquil Luxury Retreats</h2>
+  <div class="package">
+    <h3>1. Weekend Escape (2 Nights)</h3>
+    <ul>
+		  <li>Private suite with scenic bush view</li>
+		  <li>Breakfast & dinner included</li>
+		  <li>Use of pool, boma & nature trails</li>
+		  <li>Free WiFi & guided farm tour</li>
+    </ul>
+    <p><strong>From $780 per person</strong></p>
+    <a class="book-button" href="mailto:strydomtihard@icloud.com?subject=Booking Enquiry – Weekend Lodge Stay">Book Now</a>
+	
+  </div>
+  
+  <div class="package">
+    <h3>2. Honeymoon in the Valley (3 Nights)</h3>
+    <ul>
+      <li>Romantic luxury suite with outdoor shower</li>
+      <li>Private bush dinner under the stars</li>
+      <li>Spa treatment & welcome champagne</li>
+      <li>2 game drives & picnic brunch</li>
+    </ul>
+    <p><strong>From $1,450 per couple</strong></p>
+    <a class="book-button" href="mailto:strydomtihard@icloud.com?subject=Booking Enquiry – Honeymoon Package">Book Now</a>
+	
+  </div>
+  
+  <div class="contact-section">
+    <h2>Have a custom request?</h2>
+    <p>We offer tailor-made itineraries for families, photographers, and corporate groups.</p>
+    <p>Email us directly or WhatsApp for quick assistance.</p>
+    <p><strong>Tihard Strydom:</strong> ‪+27 60 893 5144‬</p>
+    <p><strong>Gerhard Strydom:</strong> ‪+27 82 477 0510‬</p>
+    <p><strong>Email:</strong> strydomtihard@icloud.com</p>
+	
+  </div>
+  
+  <div style="text-align:center;">
+    <a href="file:///D:/Tihard%20Strydom/The%20Valley%20Safari's/The%20Valley%20Safari's%20Website.html" class="back-home">← Back to Home</a>
+	
+  </div>
+  </div>
+  
+  <footer>
+  <p>&copy; 2025 The Valley Safari's & The Valley Lodge | Proudly located in South Africa 🇿🇦 | Tihard Strydom 😁</p>
+</footer>
+
+</body>
+</html>

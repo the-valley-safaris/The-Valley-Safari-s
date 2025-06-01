@@ -1,0 +1,351 @@
+
+<html lang="en">
+				<head>
+						<meta charset="UTF-8">
+			<title>The Valley Safari's</title>
+			<link rel="icon" type="kudu_logo2.png"
+			href="kudu_logo2.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		
+		  body {font-family: 'Georgia', serif;
+		  margin: 0;
+		  padding: 0;
+		  background-color: #fdfcf9;
+		  color: #2f2f2f;}
+	  
+		  header {background-color: #2f4f2f;
+		  color: white;
+		  padding: 40px 20px;
+		  text-align: center;
+		  position: relative;}
+
+		  .sa-flag {position: absolute;
+		  top: 20px;
+		  right: 20px;
+		  width: 50px;}
+
+		  .container { max-width: 1200px;
+		  margin: auto;
+		  padding: 30px 20px;}
+
+		h1, h2 {color: #2f4f2f;}
+
+		  .logos {display: flex;
+		  justify-content: space-around;
+		  align-items: center;
+		  flex-wrap: wrap;
+		  margin-top: 30px;}
+
+		  .logos img {max-height: 160px;
+		  margin: 10px;}
+
+		  .intro {text-align: center;
+		  padding: 30px 20px;}
+
+		  .intro p {font-size: 1.15rem;
+		  line-height: 1.6;}
+
+		 .safari-photo {width: 100%;
+		  max-width: 900px;
+		  display: block;
+		  margin: 40px auto;
+		  border-radius: 10px;}
+
+		  .contact-location {display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		  margin-top: 40px;}
+
+		  .contact, .location {flex: 1 1 45%;
+		  margin: 20px;}
+
+		  .contact h3, .location h3 {color: #2f4f2f;}
+
+		  iframe {
+		  width: 100%;
+		  height: 300px;
+		  border: none;
+		  border-radius: 8px;}
+
+		  .book-button {
+		  display: block;
+		  width: 220px;
+		  margin: 40px auto;
+		  padding: 15px;
+		  background-color: #3b6e3b;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 1.1rem;
+		  text-align: center;
+		  border-radius: 8px;
+		  text-decoration: none;}
+
+		  .book-button:hover {
+		  background-color: #2f4f2f;}
+
+		  form {margin-top: 20px;}
+
+		  input, textarea {
+		  width: 100%;
+		  padding: 10px;
+		  margin-top: 10px;
+		  margin-bottom: 20px;
+		  border: 1px solid #ccc;
+		  border-radius: 5px;
+		  font-family: inherit;}
+
+		 .gallery {margin-top: 60px;}
+
+		 .gallery h2 {text-align: center;}
+
+		  .gallery-grid {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		  gap: 15px;
+		  margin-top: 30px;}
+
+		  .gallery-grid img {
+		  width: 100%;
+		  height: 200px;
+		  object-fit: cover;
+		  border-radius: 8px;}
+
+		  footer {
+		  background-color: #2f4f2f;
+		  color: white;
+		  text-align: center;
+		  padding: 30px 20px;
+		  margin-top: 60px;}
+
+		  @media(max-width: 768px) {.contact-location {flex-direction: column;}}
+	</style>
+		</head>
+		
+		<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;}
+
+    /* Posisionering van die hamburger ikoon */
+    .menu-toggle {
+    font-size: 30px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;}
+
+    /* Die menu self */
+    .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 30px 0;
+    text-align: center;
+    z-index: 999;}
+
+    .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 20px;
+    display: block;}
+
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);}
+</style>
+
+<!--  Hamburger ikoon -->
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<!-- ✅Spyskaart wat oopmaak wanneer jy klik -->
+<div class="menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="packages.html">Packages & Bookings</a>
+  <a href="logbook.html">Hunters Logbook</a>
+  <a href="team.html">Meet the Team</a>
+  <a href="faqs.html">FAQs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";}
+</script>
+
+			<body>
+			
+			<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f4f4f4; flex-wrap: wrap; text-align: center;">
+  <!-- Safari logo aan die linkerkant -->
+  <div style="flex: 1;">
+		<img src="kudu_logo2.jpg" alt="The Valley Safaris Logo" style="max-width: 120px; height: auto; display: block; margin: 0 auto;">
+		<h2 style="margin-top: 10px;">THE VALLEY SAFARI'S</h2>
+  </div>
+
+<!-- Middel gedeelte met hoof opskrif en vlag -->
+  <div style="flex: 1;">
+		<img class="sa-flag" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="South African Flag" style="width: 50px; margin-top: 10px;">
+    <p style="margin-top: 20px; font-style: italic;">
+	<h2 style="color: #8B4513;">Arrive as a Guest, Depart as Family.</h2></p>
+  </div>
+
+<!-- Lodge logo aan die regterkant -->
+  <div style="flex: 1;">
+		<img src="lodge_logo2.jpg" alt="The Valley Lodge Logo" style="max-width: 120px; height: auto; display: block; margin: 0 auto;">
+		<h2 style="margin-top: 10px;">THE VALLEY LODGE</h2>
+  </div>
+  
+</header>
+<hr style="border: 4px groove #367C2B; margin: 0;">
+
+  <!-- INTRO -->
+  
+<div class="intro">
+    <h2>Welcome to Our Valley</h2>
+    <p>Nestled in the heart of South Africa’s North West province lies a third-generation family farm known for its breathtaking views, unspoiled bushveld, and warm hospitality. Just 45 km from the historic town of Potchefstroom, The Valley is your gateway to Africa’s wild soul, where golden sunsets, roaming wildlife, and luxurious serenity meet.</p>
+    <p>Whether you’re seeking a guided safari through vast savanna, a tranquil stay beneath an acacia tree at the lodge, or simply a place to reconnect with nature. The Valley Safari's and Lodge welcomes you like family.</p>
+</div>
+	<img class="safari-photo" src="sunset.jpg" alt="Sunset 2025">
+	
+  <section id="about-us" style="font-family: Arial, sans-serif; padding: 40px; background-color: #f9f9f9;">
+  <div style="max-width: 900px; margin: auto;">
+    <h2 style="color: #2d472c; font-size: 36px; margin-bottom: 20px;">About Us – The Valley Safari's</h2>
+    <p style="font-size: 18px; line-height: 1.8; color: #333;">
+      At The Valley Safari's, we believe that a great hunt is more than just a trophy, it's about the full experience. Whether you are a seasoned hunter or visiting Africa for the first time, our team is committed to providing you with a professional, personalized, and unforgettable safari. Every hunting trip is tailor-made to suit the individual needs and expectations of each client, ensuring a unique and exclusive adventure every time.
+    </p>
+    <p style="font-size: 18px; line-height: 1.8; color: #333;">
+      We also specialize in cross-border hunts for selected species in neighbouring countries like Namibia and Botswana, working with trusted partners to ensure ethical, safe, and successful experiences. From plains game to dangerous game, our passion lies in delivering the highest standard of trophy quality, service, and warm African hospitality.
+    </p>
+    <p style="font-size: 18px; line-height: 1.8; color: #333;">
+      Let The Valley Safari's be your gateway to the African wilderness, where tradition meets excellence, and every hunt becomes a lifelong memory.
+    </p> 
+	
+  </div>
+  
+</section>
+
+<section style="padding: 80px 20px; background-color: #f5f5f5; text-align: center; font-family: Arial, sans-serif;">
+	<h2 style="font-size: 36px; color: #2f4f2f; margin-bottom: 20px;">Packages & Bookings</h2>
+		<p style="font-size: 18px; color: #333; max-width: 700px; margin: 0 auto 40px;">
+			Ready for the safari of a lifetime? Explore our tailored hunting packages and book your adventure with The Valley Safari's today.
+		</p>
+  <a href="file:///D:/Tihard%20Strydom/The%20Valley%20Safari's/Packages_Booking.html.html" target="_blank" rel="noopener noreferrer"
+     style="background-color: #295f2d; color: white; padding: 15px 30px; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s ease;">
+    View Packages & Book Now
+  </a>
+</section>
+
+<section style="padding: 80px 20px; background-color: #eae4d3; text-align: center; font-family: Arial, sans-serif;">
+	<h2 style="font-size: 36px; color: #5a3e1b; margin-bottom: 20px;">Hunter’s Logbook & Guest Reviews</h2>
+		<p style="font-size: 18px; color: #333; max-width: 750px; margin: 0 auto 40px;">
+			Discover unforgettable stories from our hunters and read what guests had to say about their experiences at The Valley Lodge. Every review tells a tale, and every trophy has a memory.
+		</p>
+  <a href="file:///D:/Tihard%20Strydom/The%20Valley%20Safari's/Logbook_Reviews.html.html" target="_blank" rel="noopener noreferrer"
+     style="background-color: #8b5d2c; color: white; padding: 15px 30px; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s ease;">
+    Explore Stories & Testimonials
+  </a>
+</section>
+
+<section style="padding: 80px 20px; background-color: #f4f1ea; text-align: center; font-family: Arial, sans-serif;">
+	<h2 style="font-size: 36px; color: #3b5323; margin-bottom: 20px;">Meet the Team</h2>
+		<p style="font-size: 18px; color: #333; max-width: 750px; margin: 0 auto 40px;">
+			Get to know the passionate people behind The Valley Safaris. From our expert tracker to your dedicated PH, our team is here to make your hunting experience unforgettable.
+		</p>
+  <a href="file:///D:/Tihard%20Strydom/The%20Valley%20Safari's/Team.html.html" target="_blank" rel="noopener noreferrer"
+     style="background-color: #3b5323; color: white; padding: 15px 30px; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s ease;">
+    Meet the Valley Team
+  </a>
+</section>
+
+<section style="padding: 80px 20px; background-color: #e6ede5; text-align: center; font-family: Arial, sans-serif;">
+	<h2 style="font-size: 36px; color: #2e4e1f; margin-bottom: 20px;">Frequently Asked Questions</h2>
+		<p style="font-size: 18px; color: #333; max-width: 750px; margin: 0 auto 40px;">
+			Got questions about your safari, what to pack, or travel info? We’ve compiled a list of the most common queries to help you prepare for your unforgettable journey with The Valley Safaris.
+		</p>
+  <a href="file:///D:/Tihard%20Strydom/The%20Valley%20Safari's/FAQs.html.html" target="_blank" rel="noopener noreferrer"
+     style="background-color: #2e4e1f; color: white; padding: 15px 30px; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s ease;">
+    View All FAQs
+  </a>
+</section>
+
+<section style="padding: 80px 20px; background-color: #f0efe9; text-align: center; font-family: Arial, sans-serif;">
+	<h2 style="font-size: 36px; color: #3d3d3d; margin-bottom: 20px;">Gallery</h2>
+		<p style="font-size: 18px; color: #333; max-width: 750px; margin: 0 auto 40px;">
+			Explore the moments that make The Valley Safaris unforgettable — from proud hunters and majestic trophies to the natural beauty of our African landscape.
+		</p>
+  <a href="file:///D:/Tihard%20Strydom/The%20Valley%20Safari's/Gallery.html.html" target="_blank" rel="noopener noreferrer"
+     style="background-color: #444444; color: white; padding: 15px 30px; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s ease;">
+    View Full Gallery
+  </a>
+</section>
+
+  <!-- BOOK NOW -->
+  
+  <!-- CONTACT & MAP -->
+  
+<div class="contact-location">
+			<div class="contact">
+				<h3>Contact Us</h3>
+					<p><strong>Tihard Strydom</strong><br>📞 ‪+27 60 893 5144‬</p>
+					<p><strong>Gerhard Strydom</strong><br>📞 ‪+27 82 477 0510‬</p>
+					<p><strong>Email:</strong><br>✉ strydomtihard@icloud.com</p>
+					
+	<form action="mailto:strydomtihard@icloud.com" method="POST" enctype="text/plain">
+		<input type="text" name="name" placeholder="Your Name" required>
+		<input type="email" name="email" placeholder="Your Email" required>
+		<textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
+		<input type="submit" value="Send Message" style="background-color:#2f4f2f; color:white; border:none; padding:10px 20px; cursor:pointer;">
+    </form>
+	
+</div>
+
+<div class="location">
+		<h3>Where to Find Us</h3>
+			<p>Farm Rietvallei<br>
+			Rysmierbult, Ventersdorp 2496<br>
+			North West Province, South Africa</p>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.9911475401863!2d26.58729137571301!3d-26.726219276793862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebddfaf61df5b4d%3A0x758a34d7cb850f4!2sFarm%20Rietvallei%2C%20Ventersdorp%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1717230000000!5m2!1sen!2sza" 
+    width="100%" 
+    height="400" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  
+</div>
+</div>
+
+<!-- GALLERY -->
+
+<div class="gallery">
+    <h2>Safari Moments</h2>
+			<div class="gallery-grid">
+			  <img src="gallery1.jpg" alt="Eland">
+			  <img src="gallery2.jpg" alt="Waterbuck">
+			  <img src="gallery3.jpg" alt="Springbuck">
+			  <img src="gallery4.jpg" alt="Impala">
+			  <img src="gallery5.jpg" alt="Sable">
+			  <img src="gallery6.jpg" alt="Cape Buffalo">
+			  <img src="gallery7.jpg" alt="Gemsbuck">
+			  <img src="gallery8.jpg" alt="Black Impala">
+			</div>
+</div>
+</div>
+
+<footer>
+  <p>&copy; 2025 The Valley Safari's & The Valley Lodge | Proudly located in South Africa 🇿🇦 | Tihard Strydom 😁</p>
+</footer>
+</body>
+</html>

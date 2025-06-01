@@ -1,0 +1,239 @@
+<html lang="en">
+			<head>
+			<meta charset="UTF-8">
+			<title>FAQs | The Valley Safaris</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+		  body {
+		  font-family: 'Georgia', serif;
+		  margin: 0;
+		  background-color: #fefef9;
+		  color: #2e2e2e;}
+	  
+			header {
+		  background-color: #2f4f2f;
+		  color: white;
+		  padding: 40px 20px;
+		  text-align: center;
+		  position: relative;}
+
+		  .sa-flag {
+		  position: absolute;
+		  top: 20px;
+		  right: 20px;
+		  width: 50px;}
+
+		  .faq-container {
+		  max-width: 1000px;
+		  margin: auto;
+		  padding: 40px 20px;}
+
+		  h1 {color: #8B4513;}
+		  
+
+		  .question {
+		  font-weight: bold;
+		  margin-top: 30px;
+		  color: #2f4f2f;}
+
+		  .answer {
+		  margin-top: 10px;
+		  margin-bottom: 30px;
+		  line-height: 1.6;}
+  
+		  .contact-section p {margin-bottom: 6px;}
+		  
+		  .back-home {
+		  display: inline-block;
+		  margin: 40px auto 0;
+		  padding: 12px 20px;
+		  text-align: center;
+		  background-color: #bbb;
+		  color: white;
+		  border-radius: 5px;
+		  text-decoration: none;}
+
+		  .contact-section {margin-top: 60px;text-align: center;}
+		  
+		  footer {
+		  background-color: #2f4f2f;
+		  color: white;
+		  text-align: center;
+		  padding: 30px;
+		  margin-top: 50px;}
+  
+</style>
+</head>
+
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;}
+
+    /* Posisionering van die hamburger ikoon */
+    .menu-toggle {
+    font-size: 30px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;}
+
+    /* Die menu self */
+    .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 30px 0;
+    text-align: center;
+    z-index: 999;}
+
+    .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 20px;
+    display: block;}
+
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);}
+</style>
+
+<!--  Hamburger ikoon -->
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<!-- ✅Spyskaart wat oopmaak wanneer jy klik -->
+<div class="menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="packages.html">Packages & Bookings</a>
+  <a href="logbook.html">Hunters Logbook</a>
+  <a href="team.html">Meet the Team</a>
+  <a href="faqs.html">FAQs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";}
+</script>
+
+<body>
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f4f4f4; flex-wrap: wrap; text-align: center;">
+  <!-- Safari logo aan die linkerkant -->
+  <div style="flex: 1;">
+		<img src="kudu_logo2.jpg" alt="The Valley Safaris Logo" style="max-width: 120px; height: auto; display: block; margin: 0 auto;">
+		
+  </div>
+
+<!-- Middel gedeelte met hoof opskrif en vlag -->
+  <div style="flex: 1;">
+		<img class="sa-flag" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="South African Flag" style="width: 50px; margin-top: 10px;">
+    <p style="margin-top: 20px; font-style: italic; color:green; ">
+	<h1>Frequently Asked Questions</h1>
+  <h2 style="color: #2f4f2f;"><p>Need help? We’ve got answers for you!</p><h2>
+  </div>
+
+<!-- Lodge logo aan die regterkant -->
+  <div style="flex: 1;">
+		<img src="lodge_logo2.jpg" alt="The Valley Lodge Logo" style="max-width: 120px; height: auto; display: block; margin: 0 auto;">
+		
+  </div>
+  
+</header>
+<hr style="border: 4px groove #367C2B; margin: 0;">
+
+<div class="faq-container">
+
+<h2 style="color:#5C4033;" >General Questions</h2>
+
+<div class="question">Where exactly is The Valley Safaris located?</div>
+  <div class="answer">
+    We are located on Farm Rietvallei in the Rysmierbult area near Ventersdorp, in the North West Province of South Africa — just 45 km from Potchefstroom. Our GPS coordinates and maps are available on the homepage.
+  
+  </div>
+  
+  <div class="question">Do I need a visa to visit South Africa?</div>
+  <div class="answer">
+    U.S. citizens visiting for less than 90 days do not need a visa. A valid passport with at least two blank pages is required. Please check your country’s current travel requirements.
+  
+  </div>
+  
+  <div class="question">Is it safe to travel to your lodge?</div>
+  <div class="answer">
+    Yes. Our lodge is privately located in a quiet rural area, and we arrange all transfers from OR Tambo International Airport. Your safety and comfort are our top priorities.
+  
+  </div>
+  
+  <h2 style="color:#5C4033;">Hunting & Safari</h2>
+  
+  <div class="question">Can I bring my own firearm?</div>
+  <div class="answer">
+    Yes. South Africa allows temporary importation of hunting rifles. We assist all hunters with SAPS Form 520 and will meet you at the airport. Alternatively, rental rifles are available at the lodge.
+  
+  </div>
+  
+  <div class="question">What animals can I hunt?</div>
+  <div class="answer">
+    We offer plains game such as kudu, impala, warthog, wildebeest, and more. Custom packages are available based on species and duration.
+  
+  </div>
+  
+  <div class="question">Do I need hunting experience?</div>
+  <div class="answer">
+    No prior experience is necessary. Our PH (Tihard Strydom) will guide you every step of the way. We cater for seasoned hunters and first-timers alike.
+  
+  </div>
+  
+  <h2 style="color:#5C4033;">Lodging & Amenities</h2>
+  <div class="question">What is included in my safari package?</div>
+  <div class="answer">
+    All accommodation, meals, beverages, transport in the hunting area, licensed PH services, field preparation of trophies, and daily laundry service are included unless otherwise stated.
+  
+  </div>
+  
+  <div class="question">Can I bring a non-hunting guest?</div>
+  <div class="answer">
+    Absolutely! We welcome observers, family members, photographers, and nature lovers. There’s plenty to see and experience.
+  
+  </div>
+  
+  <div class="question">Is Wi-Fi available?</div>
+  <div class="answer">
+    Yes, Wi-Fi is available at the main lodge. However, signal may be limited during game drives or in remote bush camps — we recommend embracing the digital detox!
+  </div>
+  </div>
+  
+  <div style="height: 40px; background-image: url('bokspoor.jpg'); background-repeat: repeat-x; background-size: contain; background-position: center;"></div>
+  
+  <div class="contact-section">
+    <h2 style="color: #2f4f2f;">Have any more questions?</h2>
+    <p>Email us directly or WhatsApp for quick assistance.</p>
+    <p><strong>Tihard Strydom:</strong> ‪+27 60 893 5144‬</p>
+    <p><strong>Gerhard Strydom:</strong> ‪+27 82 477 0510‬</p>
+    <p><strong>Email:</strong> strydomtihard@icloud.com</p>
+	
+  </div>
+  
+  <div style="text-align:center;">
+    <a href="file:///D:/Tihard%20Strydom/The%20Valley%20Safari's/The%20Valley%20Safari's%20Website.html" class="back-home">← Back to Home</a>
+	
+  </div>
+  </div>
+  
+  <footer>
+  <p>&copy; 2025 The Valley Safari's & The Valley Lodge | Proudly located in South Africa 🇿🇦 | Tihard Strydom 😁</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<html lang="en">
+				<head>
+				<meta charset="UTF-8">
+				<title>Hunters’ Logbook & Guest Reviews | The Valley Safaris</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+		  body {
+		  font-family: 'Georgia', serif;
+		  margin: 0;
+		  padding: 0;
+		  background-color: #fdfcf8;
+		  color: #2d2d2d;}
+	  
+			header {
+		  background-color: #2f4f2f;
+		  color: white;
+		  padding: 40px 20px;
+		  text-align: center;
+		  position: relative;}
+
+		  .sa-flag {
+		  position: absolute;
+		  top: 20px;
+		  right: 20px;
+		  width: 50px;}
+
+		  .container {
+		  max-width: 1100px;
+		  margin: auto;
+		  padding: 40px 20px;}
+
+		  h1 {color: #8B4513;}
+		  h2 {color: #2f4f2f;}
+
+		  .logbook-entry, .review-entry {
+		  background-color: white;
+		  border: 1px solid #ccc;
+		  margin-bottom: 30px;
+		  padding: 20px;
+		  border-radius: 10px;
+		  box-shadow: 2px 4px 10px rgba(0,0,0,0.07);}
+
+		  .logbook-entry img, .review-entry img {
+		  max-width: 100%;
+		  height: auto;
+		  border-radius: 8px;
+		  margin-top: 10px;}
+
+		  .entry-meta {
+		  font-size: 0.9em;
+		  color: #555;
+		  margin-top: 5px;
+		  margin-bottom: 15px;}
+
+		  .stars {color: #f5b50a;}
+
+		  .back-home {
+		  display: block;
+		  text-align: center;
+		  background-color: #3b6e3b;
+		  color: white;
+		  padding: 12px 25px;
+		  text-decoration: none;
+		  border-radius: 6px;
+		  margin-top: 50px;}
+
+		  footer {
+		  background-color: #2f4f2f;
+		  color: white;
+		  text-align: center;
+		  padding: 30px 20px;
+		  margin-top: 60px;}
+		  
+</style>
+	</head>
+
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;}
+
+    /* Posisionering van die hamburger ikoon */
+    .menu-toggle {
+    font-size: 30px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;}
+
+    /* Die menu self */
+    .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 30px 0;
+    text-align: center;
+    z-index: 999;}
+
+    .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 20px;
+    display: block;}
+
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);}
+</style>
+
+<!--  Hamburger ikoon -->
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<!-- ✅Spyskaart wat oopmaak wanneer jy klik -->
+<div class="menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="packages.html">Packages & Bookings</a>
+  <a href="logbook.html">Hunters Logbook</a>
+  <a href="team.html">Meet the Team</a>
+  <a href="faqs.html">FAQs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";}
+</script>
+
+<body>
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f4f4f4; flex-wrap: wrap; text-align: center;">
+  <!-- Safari logo aan die linkerkant -->
+  <div style="flex: 1;">
+		<img src="kudu_logo2.jpg" alt="The Valley Safaris Logo" style="max-width: 120px; height: auto; display: block; margin: 0 auto;">
+		
+  </div>
+
+<!-- Middel gedeelte met hoof opskrif en vlag -->
+  <div style="flex: 1;">
+		<img class="sa-flag" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="South African Flag" style="width: 50px; margin-top: 10px;">
+    <p style="margin-top: 20px; font-style: italic;">
+	<h1>Hunters' Logbook & Guest Reviews</h1>
+  <h2><p>Real moments. Real trophies. Real memories.</p><h2>
+  </div>
+
+<!-- Lodge logo aan die regterkant -->
+  <div style="flex: 1;">
+		<img src="lodge_logo2.jpg" alt="The Valley Lodge Logo" style="max-width: 120px; height: auto; display: block; margin: 0 auto;">
+		
+  </div>
+  
+</header>
+<hr style="border: 4px groove #367C2B; margin: 0;">
+
+<div class="container">
+
+<h2>🦌 Hunters’ Logbook</h2>
+
+<div class="logbook-entry">
+    <h3>Mark Thompson – Black Impala</h3>
+    <div class="entry-meta">Date: March 2025 | From: Texas, USA</div>
+    <p>“One of the most professional and ethical hunts I’ve ever experienced. The Black Impala I harvested will remain one of my proudest moments. Thank you, Tihard and team!”</p>
+    <img src="gallery8.jpg" alt="Mark with Impala">
+	
+  </div>
+  
+  <div class="logbook-entry">
+    <h3>Sara & Joe Daniels – Photographic Safari</h3>
+    <div class="entry-meta">Date: April 2025 | From: Montana, USA</div>
+    <p>“No words. We captured some of the best sunset, elephant and giraffe shots ever. I left with full memory cards and a fuller heart.”</p>
+    <img src="africa.jpg" alt="Photographic safari" style="width:100%; height:90%;">
+	
+  </div>
+  
+  <div class="logbook-entry">
+    <h3>William Chen – Cape Buffalo</h3>
+    <div class="entry-meta">Date: February 2025 | From: California, USA</div>
+    <p>“Incredible bow-stalk opportunity on a Cape Buffalo. Adrenaline like never before. Guides were top-tier.”</p>
+    <img src="gallery6.jpg" alt="Bowhunting buffalo">
+	
+  </div>
+  
+  <h2>🌟 Guest Reviews</h2>
+  
+<div class="review-entry">
+    <h3>Emily Harris</h3>
+    <div class="stars">★★★★★</div>
+    <p>“The Valley Lodge was a slice of heaven. Loved the food, rooms, and how personal everything felt. Arrived as a guest, left feeling like family.”</p>
+  
+  </div>
+  
+  <div class="review-entry">
+    <h3>Lucas Meyer</h3>
+    <div class="stars">★★★★★</div>
+    <p>“This was my fourth safari in Africa, and this was by far the most memorable. Clean lodge, expert guides, and magical sunsets.”</p>
+  
+  </div>
+  
+  <div class="review-entry">
+    <h3>Antonio Ramirez</h3>
+    <div class="stars">★★★★☆</div>
+    <p>“Everything was great, only missed WiFi in one of the remote camps, but honestly – it added to the charm.”</p>
+  
+  </div>
+  
+  <div style="text-align:center;">
+    <a href="file:///D:/Tihard%20Strydom/The%20Valley%20Safari's/The%20Valley%20Safari's%20Website.html" class="back-home">← Back to Home</a>
+	
+  </div>
+  </div>
+  
+  <footer>
+  <p>&copy; 2025 The Valley Safari's & The Valley Lodge | Proudly located in South Africa 🇿🇦 | Tihard Strydom 😁</p>
+</footer>
+
+</body>
+</html>
